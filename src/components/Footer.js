@@ -24,7 +24,7 @@ const Footer = () => {
             </MDBCol>
 
             <MDBCol md="5" size="12" className="mb-4 mb-md-0">
-              <MDBInput type="text" id="form5Example2" placeHolder="Email address" />
+              <MDBInput type="text" id="form5Example2" placeholder="Email address" />
             </MDBCol>
 
             <MDBCol size="auto" className="mb-4 mb-md-0">

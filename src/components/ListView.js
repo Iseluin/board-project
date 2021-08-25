@@ -15,28 +15,30 @@ const ListView = (props) => {
   const docId = props.id;
 
   // fetching the cards inside the database.
-  const fetchCards = async () => {
-    await db
-      .collection("board")
-      .doc(docId)
-      .collection("card")
-      .onSnapshot(function (querySnapshot) {
-        setCards(
-          querySnapshot.docs.map((card, index) => {
-            return {
-              id: card.id,
-              key: index,
-              ...card.data(),
-            };
-          })
-        );
-      });
-  };
+
 
   //control argument needs to be figured out.
   useEffect(() => {
+    const fetchCards = async () => {
+      await db
+        .collection("board")
+        .doc(docId)
+        .collection("card")
+        .onSnapshot(function (querySnapshot) {
+          setCards(
+            querySnapshot.docs.map((card, index) => {
+              return {
+                id: card.id,
+                key: index,
+                ...card.data(),
+              };
+            })
+          );
+        });
+    };
     fetchCards();
   }, []);
+
   return (
     <Accordion style = {{ margin : '10px'}}>
       <AccordionItem key={docId}>
