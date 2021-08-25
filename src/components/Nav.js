@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import { Navbar, NavItem, Container, Nav } from "react-bootstrap";
 import logo from "../photos/logo.png";
 
@@ -9,7 +9,7 @@ const NavBar = () => {
     <Navbar style={{ backgroundColor:'#202534', color:'white' }}>
       <Container>
         <Navbar.Brand href="/">
-          <img src={logo} style={{ height: "50px"}} />
+          <img src={logo} alt="logo" style={{ height: "50px"}} />
         </Navbar.Brand>
         <Nav className="me-auto">
           <NavItem >

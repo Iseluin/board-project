@@ -1,8 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { Button, Carousel } from "react-bootstrap";
-import B from "../photos/B.jpeg";
-import A from "../photos/A.jpeg";
+
 
 export const Home = () => {
   let history = useHistory();

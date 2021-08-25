@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CompletedCardContent from "./CompletedCardContent";
 import db from "../firebaseConfig";
-import { Button, Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 
 export const Completed = () => {

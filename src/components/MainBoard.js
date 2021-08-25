@@ -3,7 +3,7 @@ import List from "./List";
 import ListView from "./ListView";
 import db from "../firebaseConfig";
 import Switch from "@material-ui/core/Switch";
-import { Button, Col, Row, Form, FormControl } from "react-bootstrap";
+import { Button, Col, Row, Form} from "react-bootstrap";
 import "../App.css";
 
 const MainBoard = () => {

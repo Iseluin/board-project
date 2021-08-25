@@ -4,7 +4,6 @@ import CardListView from "./CardListView";
 import {
   Accordion,
   AccordionItem,
-  AccordionItemHeading,
   AccordionItemButton,
   AccordionItemPanel,
 } from "react-accessible-accordion";
