@@ -37,7 +37,7 @@ const ListView = (props) => {
         });
     };
     fetchCards();
-  }, []);
+  }, [docId]);
 
   return (
     <Accordion style = {{ margin : '10px'}}>

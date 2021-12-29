@@ -34,7 +34,7 @@ const List = (props) => {
   //control argument needs to be figured out.
   useEffect(() => {
     fetchCards();
-  }, []);
+  }, [fetchCards]);
 
   const handleClick = () => {
     setShowForm((showForm) => !showForm);
