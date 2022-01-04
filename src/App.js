@@ -13,7 +13,7 @@ export function App() {
   return (
     <div>
       <Router>
-        <Route path="/" component={NavBar} />
+        <NavBar />
         <Route exact path="/" component={Home} />
         <Route path="/Completed" component={Completed} />
         <Route path="/MainBoard" component={MainBoard} />
